@@ -10,7 +10,7 @@ function UserInfo({repos, username}){
         } else {
             setUserImg(repos[0].owner.avatar_url)
         }
-    }, [username])
+    }, [username, repos])
     
     return(
         <>
