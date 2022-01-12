@@ -9,9 +9,12 @@ function RepoList({repos, setSelectedRepo}) {
         navigate('/repo')
     }
     return (
-        <ul>
-            {repos.map(repo => <li key={repo.id}><a onClick={() => handleClick(repo)}>{repo.name}</a></li>)}
-        </ul>
+        <>
+        <h2 id="repos-heading">Repositories</h2>
+        <div id="repos-list">
+            {repos.map(repo => <a className="li-repos" key={repo.id} onClick={() => handleClick(repo)}>{repo.name}</a>)}
+        </div>
+        </>
     )
 }
 

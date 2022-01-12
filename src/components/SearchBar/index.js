@@ -6,12 +6,13 @@ function SearchBar({setUsername}) {
     const handleSubmit = e => {
         e.preventDefault()
         setUsername(nameInput)
+        e.target.elements.namedItem('username').value = ''
     }
 
     return (
         <form id= "form" onSubmit={handleSubmit}>
-            <label  htmlFor='username'>Username</label>
-            <input type="text" id='username' placeholder='Search...' onChange={e => setNameInput(e.target.value)} />
+            {/* <label  htmlFor='username'>Username</label> */}
+            <input type="text" id='username' placeholder='Username' onChange={e => setNameInput(e.target.value)} />
             <input type="submit" value="Find" />
         </form>
     )

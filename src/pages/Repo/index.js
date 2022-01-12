@@ -6,15 +6,17 @@ function Repo({selectedRepo}) {
     return(
         <>
         <BackButton />
+        <div id="repo-display">
         <h1>{selectedRepo.name}</h1>
-        {selectedRepo.description && <p>{selectedRepo.description}</p>}
+        {selectedRepo.description && <h3>{selectedRepo.description}</h3>}
         <ul>
             <li>Issue count: {selectedRepo.open_issues_count}</li>
             <li>Forks: {selectedRepo.forks_count}</li>
             <li>Stargazers: {selectedRepo.stargazers_count}</li>
             <li>Watchers: {selectedRepo.watchers_count}</li>
-            <li>Last updated: {date.toDateString()}</li>
+            <li>Last updated: {date.toString()}</li>
         </ul>
+        </div>
         </>
     )
 }
