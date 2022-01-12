@@ -1,12 +1,12 @@
 import React, {useState} from "react";
-import { SearchBar, RepoList } from "../../components";
+import { SearchBar, RepoList, UserInfo } from "../../components";
 
 function Main({username, setUsername, repos, setSelectedRepo}) {
     
     return (
         <>
         <SearchBar setUsername={setUsername} />
-        {username && <RepoList repos={repos} setSelectedRepo={setSelectedRepo} />}
+        {username && (<><UserInfo username={username} repos={repos} /> <RepoList repos={repos} setSelectedRepo={setSelectedRepo} /></>)}
         </>
     )
 }

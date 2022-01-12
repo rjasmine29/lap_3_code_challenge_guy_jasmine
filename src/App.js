@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Main, Repo } from './pages'
+// import { UserInfo } from './components';
 import axios from 'axios';
 
 
