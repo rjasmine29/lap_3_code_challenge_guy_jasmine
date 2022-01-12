@@ -9,8 +9,8 @@ function SearchBar({setUsername}) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label htmlFor='username'>Username</label>
+        <form id= "form" onSubmit={handleSubmit}>
+            <label  htmlFor='username'>Username</label>
             <input type="text" id='username' onChange={e => setNameInput(e.target.value)} />
             <input type="submit" value="Find" />
         </form>

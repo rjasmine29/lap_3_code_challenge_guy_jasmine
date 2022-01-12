@@ -1,8 +1,12 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom'
 
 function RepoList({repos, setSelectedRepo}) {
+    const navigate = useNavigate()
+
     const handleClick = (repo) => {
         setSelectedRepo(repo)
+        navigate('/repo')
     }
     return (
         <ul>

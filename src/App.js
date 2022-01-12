@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Main,  } from './pages'
+import { Main, Repo } from './pages'
 import axios from 'axios';
 
 
@@ -23,8 +23,8 @@ function App() {
             <main>
                 <Routes> 
                     <Route path= "/" element={<Main username={username} setUsername={setUsername} repos={repos} setSelectedRepo={setSelectedRepo} />}/>
-                    {/* <Route path = ""></Route> */}
-
+                    <Route path = "/repo" element={<Repo selectedRepo={selectedRepo} />} />
+                    
                 </Routes>
             </main>
         </div>
