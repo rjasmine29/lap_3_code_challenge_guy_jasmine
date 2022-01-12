@@ -13,10 +13,10 @@ function UserInfo({repos, username}){
     }, [username, repos])
     
     return(
-        <>
-        <img src={userImg}/>
-        <p>{username.toLowerCase()}</p>
-        </>
+        <div id="user-info">
+        <img id="user-img" src={userImg}/>
+        <p id="username-display">{username.toLowerCase()}</p>
+        </div>
     )
 }
 

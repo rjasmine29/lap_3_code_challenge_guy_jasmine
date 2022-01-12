@@ -22,6 +22,7 @@ function App() {
     return(
         <div id="app">
             <main>
+                <h1 id='heading'>Find My Repos</h1>
                 <Routes> 
                     <Route path= "/" element={<Main username={username} setUsername={setUsername} repos={repos} setSelectedRepo={setSelectedRepo} />}/>
                     <Route path = "/repo" element={<Repo selectedRepo={selectedRepo} />} />
