@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import axios from "axios";
 
 function UserInfo({repos, username}){
     const [userImg, setUserImg] = useState()
@@ -13,7 +14,7 @@ function UserInfo({repos, username}){
     
     return(
         <>
-        <img />
+        <img src={userImg}/>
         <p>{username.toLowerCase()}</p>
         </>
     )
