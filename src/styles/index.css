@@ -1,1 +1,36 @@
+main {
+    padding: 20px;
+    
+    
+    
+}
 
+#form {
+    font-size: 18pt;
+}
+
+[type="text"] {
+    border: 2px solid rgb(211, 211, 206);
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+    
+    
+}
+
+[type="submit"] {
+    border: 2px solid rgb(211, 211, 206);
+    border-radius: 5px;
+}
+
+
+
+#back-button {
+    background-color:rgb(33, 102, 204);
+}
+
+body {
+   
+    background-color: rgb(30, 32, 32); 
+    color: rgb(33, 102, 204);
+}
